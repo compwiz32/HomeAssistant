@@ -1,0 +1,82 @@
+- id: '1645328867230'
+  alias: Sunset
+  description: Lights and Device On
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -00:20:00
+  condition: []
+  action:
+  - scene: scene.sunset
+  mode: single
+- id: '1645540163101'
+  alias: Sunrise
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: -00:20:00
+  condition: []
+  action:
+  - scene: scene.sunrise
+  mode: single
+- id: '1645542730950'
+  alias: Kid's Bedtime
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:15:00'
+  condition: []
+  action:
+  - scene: scene.kids_bedtime
+  mode: single
+- id: '1645542803356'
+  alias: Late Morning
+  description: ''
+  trigger:
+  - platform: time
+    at: 09:15:00
+  condition: []
+  action:
+  - scene: scene.late_morning
+  mode: single
+- id: '1645592342723'
+  alias: Early Morning
+  description: ''
+  trigger:
+  - platform: time
+    at: 05:00:00
+  condition: []
+  action:
+  - scene: scene.early_morning
+  mode: single
+- id: '1645592479836'
+  alias: Goodnight!
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:15:00
+  condition: []
+  action:
+  - scene: scene.goodnight
+  mode: single
+- id: '1645930361633'
+  alias: Fish Tank Lights Off
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:30:00'
+  condition: []
+  action:
+  - scene: scene.fish_tank_lights_off
+  mode: single
+- id: '1645930439706'
+  alias: FIsh Tank Lights On
+  description: ''
+  trigger:
+  - platform: time
+    at: '14:00:00'
+  condition: []
+  action:
+  - scene: scene.fish_tank_lights_on
+  mode: single
